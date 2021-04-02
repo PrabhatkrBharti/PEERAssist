@@ -6,7 +6,7 @@ Experimental Code of research paper PRAssist (under review)
 _We recommend using google colab to run it._
 ***
 
-_Step 1_ :  **Download master-branch** of this repository & Go to **main folder** of it.
+_Step 1_ :  **Download master-branch** of this repository [ zip file size : ~ 58.2 Mb ] & Go to **main folder** of it.
 
 _Step 2_ :  **Make bash files executable**
 ```bash
