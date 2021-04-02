@@ -2,6 +2,7 @@
 
 
 pip install tqdm
+pip install summa
 pip install numpy
 pip install pandas
 pip install sklearn
