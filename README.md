@@ -18,7 +18,7 @@ _Step 3_ :  **Run requirements.sh**
 ```basg
 ./requirements.sh
 ```
-_Step 4_ :  **Run preprocessor.sh**
+_Step 4_ :  **Run preprocessor.sh** ,  takes around [10 - 15 min.]
 ```bash
 ./preprocessor.sh
 ```
