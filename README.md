@@ -11,7 +11,6 @@ _Step 1_ :  **Download master-branch** of this repository [ zip file size : ~ 58
 _Step 2_ :  **Make bash files executable**
 ```bash
 chmod +x requirements.sh
-chmod +x ./raw/extractor.sh
 chmod +x preprocessor.sh
 chmod +x encoder.sh
 ```
