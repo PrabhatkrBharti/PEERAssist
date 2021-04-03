@@ -26,12 +26,13 @@ _Step 5_ :  **Run encoder.sh** with year (2017 / 2018 / 2019 / 2020) in command 
 ```bash
 ./encoder.sh 2017
 ```
-_Step 6_ :  Now models are ready to go, **run any of the two models with year**, paper_rev_sentiment variant
+_Step 6_ :  Now models are ready to go, **run any of the two models with year and no. of epochs**,run paper_rev_sentiment variant
 ```bash
-python model_PRS.py 2017
+python model_PRS.py 2017 32
 ```
 or , paper_rev variant
 ```bash
-python model_PR.py 2017
+python model_PR.py 2017 32
 ```
+on ICLR-2017/18/19/20 Dataset and use 32 as number of epochs value.
 ***
