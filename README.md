@@ -60,6 +60,9 @@ Similarly keeping sentence operator  **SENT**op = 10 allowed **N**sent (maximum 
 
 GRAPHS to show selection of operators..
 
+_Section Operator Analysis_
+![Alt text](./res/section_stat_final.png)
+
 **Note** : Any paper having more section that **N**sec or any summarized section having more sentences than **N**sent has gone through **_equipartition strategy_** which makes it a valid sample. 
 
 **equipartition strategy** : We try to group items in the given input such that every group has approximately same number of items , and number of groups does not exceed a certain value.
