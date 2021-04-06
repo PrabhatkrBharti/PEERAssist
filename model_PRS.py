@@ -56,7 +56,7 @@ batch_sz = 32     #keep it even
  
 lstm_base = 256
 
-num_epochs = 42
+num_epochs = 20
 if len(sys.argv)>2:
 	num_epochs = int(sys.argv[2])
  
