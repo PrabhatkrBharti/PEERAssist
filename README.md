@@ -1,6 +1,12 @@
 # PRAssist
 Experimental Code of research paper PRAssist (under review)
 
+GO to
+How to run it ... ?
+SECTION selection of the paper .. [url : https://github.com/PrabhatkrBharti/PRAssist/blob/main/README.md#section-selection-in-paper ]
+
+
+
 # How to run it ... ?
 
 _We recommend using google colab to run it._
