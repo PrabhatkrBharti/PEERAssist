@@ -13,6 +13,7 @@ _Step 2_ :  **Make bash files executable**
 chmod +x requirements.sh
 chmod +x preprocessor.sh
 chmod +x encoder.sh
+chmod +x clear_year.sh
 ```
 _Step 3_ :  **Run requirements.sh**
 ```basg
@@ -22,17 +23,23 @@ _Step 4_ :  **Run preprocessor.sh** ,  takes around [10 - 15 min.]
 ```bash
 ./preprocessor.sh
 ```
-_Step 5_ :  **Run encoder.sh** with year (2017 / 2018 / 2019 / 2020) in command line argument , e.g.
+_Step 5_ :  **Run encoder.sh** with year (2017 / 2018 / 2019 / 2020) in command line argument [~ 30 min.] , e.g.
 ```bash
 ./encoder.sh 2017
 ```
-_Step 6_ :  Now models are ready to go, **run any of the two models with year and no. of epochs**,run paper_rev_sentiment variant
+_Step 6_ :  Now models are ready to go, **run any of the two models**,run paper_rev_sentiment variant
 ```bash
-python model_PRS.py 2017 32
+python model_PRS.py 2017
 ```
 or , paper_rev variant
 ```bash
-python model_PR.py 2017 32
+python model_PR.py 2017
 ```
-on ICLR-2017/18/19/20 Dataset and use 32 as number of epochs value.
+on ICLR-2017/18/19/20 Dataset.
+
+
+[_optional step_] :  When running low on memory , clear embedding datas of the dataset which is not required further.
+```bash
+./clear_year.sh 2017
+```
 ***
