@@ -38,7 +38,7 @@ python model_PR.py 2017
 on ICLR-2017/18/19/20 Dataset.
 
 
-[_optional step_] :  When running low on memory , clear embedding datas of the dataset which is not required further.
+[_optional step_] :  When **running low on memory** , clear embedding datas of the dataset which is not required further.
 ```bash
 ./clear_year.sh 2017
 ```
