@@ -52,13 +52,15 @@ on ICLR-2017/18/19/20 Dataset.
 ./clear_year.sh 2017
 ```
 ***
-###SECTION Selection in Paper 
+### SECTION Selection in Paper 
 
-Upon analysing the datasets, We kept section operator **SEC**op = 30,  
-which (according to the code) allowed **N**sec (maximum number of sections in a paper) to be in the range ( 0 , 2 x **SEC**op ). 
+Upon analysing the datasets, We kept section operator **SEC**op = 30, which (according to the code) allowed **N**sec (maximum number of sections in a paper) to be in the range ( 0 , 2 x **SEC**op ). 
 Similarly keeping sentence operator  **SENT**op = 10 allowed **N**sent (maximum number of sentences in a summarized section) to be in the range ( 0 , 2 x **SENT**op ) . 
 
 GRAPHS to show selection of operators..
 
-Any paper having more section that **N**sec or any summarized section having more sentences than **N**sent has gone through equipartition strategy which makes it valid a valid sample. 
+**Note** : Any paper having more section that **N**sec or any summarized section having more sentences than **N**sent has gone through **_equipartition strategy_** which makes it a valid sample. 
+
+**equipartition strategy** : We try to group items in the given input such that every group has approximately same number of items , and number of groups does not exceed a certain value.
+
 ***
