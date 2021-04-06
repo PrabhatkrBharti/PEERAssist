@@ -25,7 +25,7 @@ nltk.download('vader_lexicon')
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
  
-seed = 17181920
+seed = 54321
  
 tf.random.set_seed(seed)
 np.random.seed(seed)
