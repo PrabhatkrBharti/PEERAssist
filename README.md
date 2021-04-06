@@ -1,10 +1,9 @@
 # PRAssist
 Experimental Code of research paper PRAssist (under review)
 
-### About Raw Data
+## About Raw Data
 
-```./raw``` folder contains compressed data files , which upon extraction will be the directories of dataset _(ICLR-17/18/19/20)_ .
-EXtracted directory ```./raw/2017/``` will contain json files of two type ```(<id>.paper.json & <id>.json)``` , where ```<id>.paper.json``` is the json of paper content and ```<id>.json``` is the json file that contains all three reviews and decision corresponding to that ```paper-id  <id>``` .
+Folder ```./raw``` contains compressed data files , which upon extraction will be the directories of dataset _(ICLR-17/18/19/20)_ . <br>EXtracted directory ```./raw/2017/``` will contain json files of two type ```(<id>.paper.json & <id>.json)``` , <br>where ```<id>.paper.json``` is the json of paper content and ```<id>.json``` is the json file that contains all three reviews and decision corresponding to that ```paper-id  <id>``` .
 ***
 
 # How to run it ... ?
