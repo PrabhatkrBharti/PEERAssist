@@ -1,5 +1,5 @@
-# PRAssist
-Experimental Code of research paper PRAssist (under review)
+# PEERAssist
+Experimental Code of Research Paper PEERAssist (under review)
 
 ## About Raw Data
 
@@ -8,54 +8,61 @@ Folder ```./raw``` contains compressed data files , which upon extraction will b
 
 # How to run it ... ?
 
-_We recommend using google colab to run it._
+_We recommend using google colab to run it. <br>    (provided how to run on google colab plateform , running in terminal will be similar)_
 ***
 
 _Step 1_ :  **Download master-branch** of this repository [ zip file size : ~ 60 Mb ] & Go to **main folder** of it.
+```bash
+!wget https://github.com/submitaccount/PRAssist/archive/refs/heads/main.zip
+!unzip main.zip
+%cd ./PRAssist-main
+```
 
 _Step 2_ :  **Make bash files executable**
 ```bash
-chmod +x requirements.sh
-chmod +x extractor.sh
-chmod +x preprocessor.sh
-chmod +x encoder.sh
-chmod +x clear_year.sh
+!chmod +x requirements.sh
+!chmod +x extractor.sh
+!chmod +x preprocessor.sh
+!chmod +x encoder.sh
+!chmod +x clear_year.sh
 ```
 _Step 3_ :  **Run requirements.sh** to download all requirements.
 ```bash
-./requirements.sh
+!./requirements.sh
 ```
 _Step 4_ : **Run extractor.sh** to extract all compressed raw data files.
 ```bash
-./extractor.sh
+!./extractor.sh
 ```
 [_optional step_] : **Run get_stats.py** to generate statistics given in paper in table I.
 ```bash
-python get_stats.py
+!python get_stats.py
 ```
 _Step 5_ :  **Run preprocessor.sh** ,  takes around [10 - 15 min.] to preprocess all data.
 ```bash
-./preprocessor.sh
+!./preprocessor.sh
 ```
 _Step 6_ :  **Run encoder.sh** with year (2017 / 2018 / 2019 / 2020) in command line argument [~ 30 min.]  to generate embeddings , e.g.
 ```bash
-./encoder.sh 2017
+!./encoder.sh 2017
 ```
 _Step 7_ :  Now models are ready to go, **run any of the two models**, run paper_rev_sentiment variant
 ```bash
-python model_PRS.py 2017
+!python model_PRS.py 2017
 ```
 or , paper_rev variant
 ```bash
-python model_PR.py 2017
+!python model_PR.py 2017
 ```
 on ICLR-2017/18/19/20 Dataset.
 
 
 [_optional step_] :  When **running low on memory** , clear embedding datas of the dataset which is not required further.
 ```bash
-./clear_year.sh 2017
+!./clear_year.sh 2017
 ```
+To run on another dataset , repeat from _Step 6_ .
+
 ***
 # Nsec & Nsent selection in Paper 
 
@@ -75,5 +82,11 @@ Similarly keeping sentence operator  **SENT**op = 10 allowed **N**sent (maximum 
 **Note** : Any paper having more section that **N**sec or any summarized section having more sentences than **N**sent has gone through **_equipartition strategy_** which makes it a valid sample. 
 
 **equipartition strategy** : We try to group items in the given input such that every group has approximately same number of items , and number of groups does not exceed a certain value.
+
+***
+
+code references & help :<br>
+[1] Tensorflow-Keras : https://www.tensorflow.org/api_docs/python/tf/keras <br>
+[2] Intent Recognition with BERT using Keras and TensorFlow 2 in Python | Text Classification Tutorial : https://youtu.be/gE-95nFF4Cc
 
 ***

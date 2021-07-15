@@ -26,6 +26,12 @@ import time
 from copy import deepcopy
 import random
 
+seed = 17181920
+ 
+tf.random.set_seed(seed)
+np.random.seed(seed)
+random.seed(seed)
+
 if len(sys.argv)<2:
 	print("ERROR : please provide year in command line argument")
 	exit()

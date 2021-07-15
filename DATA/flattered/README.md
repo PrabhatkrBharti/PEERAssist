@@ -1,2 +1,1 @@
-To store flattered sentences of paper ans reviews.
-{ Keep them Embedding ready }
+## to keep texts flattered , i.e. embedding ready

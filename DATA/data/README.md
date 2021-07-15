@@ -1,1 +1,1 @@
-To keep embedding matrices. { Keep then train-test ready }
+## to keep embedding datas model ready

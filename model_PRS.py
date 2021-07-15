@@ -90,6 +90,22 @@ abMeta = pd.read_csv("./DATA/AB"+year+".csv")
 abMeta = abMeta[['id' , 'verdict', 'revMeta-start' , 'revMeta-end']]
 num_samples = len(abMeta)
 print("rev_num_tokens : ",rev_num_tokens)
+
+
+num_samples = len(scMeta)
+pids = []
+scid = {}
+for i in range(num_samples):
+	pids.append(str(scMeta['id'][i]))
+	scid[str(scMeta['id'][i])] = i
+pids.sort()
+dummy = []
+for i in range(num_samples):
+	j = scid[pids[i]]
+	dummy.append([scMeta['id'][j] , scMeta['section-start'][j] , scMeta['section-end'][j]])
+dummy = pd.DataFrame(dummy)
+dummy.columns = ['id' , 'section-start' , 'section-end']
+scMeta = dummy
 	
 print("paperMeta-revise...\n")
 num_samples = len(abMeta)
