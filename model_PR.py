@@ -1,4 +1,4 @@
-#requirements {  tqdm , pandas , numpy , tensorflow , keras , sklearn , nltk , matplotlib , mlxtend }
+##requirements {  tqdm , pandas , numpy , tensorflow , keras , sklearn , nltk , matplotlib , mlxtend }
 import sys
 import tensorflow as tf
 from tqdm import tqdm

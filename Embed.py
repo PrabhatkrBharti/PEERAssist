@@ -1,4 +1,4 @@
-#requirements : { pandas , numpy , tqdm , tensorflow , tensorflow_hub }
+##requirements : { pandas , numpy , tqdm , tensorflow , tensorflow_hub }
 import sys
 from tqdm import tqdm
 import tensorflow as tf

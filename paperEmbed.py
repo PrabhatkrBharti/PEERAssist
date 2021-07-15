@@ -1,4 +1,4 @@
-#requirements : { tqdm , pandas , numpy , bert-for-tf2  ,  sentencepiece , tensorflow , tensorflow.keras ,  move scibert_model to directory ./scibert_model }
+##requirements : { tqdm , pandas , numpy , bert-for-tf2  ,  sentencepiece , tensorflow , tensorflow.keras ,  move scibert_model to directory ./scibert_model }
 
 import sys
 import os

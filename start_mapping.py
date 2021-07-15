@@ -1,4 +1,4 @@
-#requirements : { pandas }
+##requirements : { pandas }
 import os
 import pandas as pd
 

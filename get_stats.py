@@ -1,4 +1,4 @@
-#requirements: {pandas, json , os}
+##requirements: {pandas, json , os}
 import pandas as pd
 import os
 from preprocess import sentence_tokenizer as stok

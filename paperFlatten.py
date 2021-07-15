@@ -1,4 +1,4 @@
-#requirements : { tqdm , pandas , json , re }
+##requirements : { tqdm , pandas , json , re }
 import pandas as pd
 from tqdm import tqdm
 import json

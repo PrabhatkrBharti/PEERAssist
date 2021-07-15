@@ -1,4 +1,4 @@
-#requirements : { summa , tqdm , pandas }
+##requirements : { summa , tqdm , pandas }
 
 import sys
 import pandas as pd
