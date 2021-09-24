@@ -15,7 +15,7 @@ _Step 1_ :  **Download master-branch** of this repository [ zip file size : ~ 60
 ```bash
 !wget https://github.com/submitaccount/PRAssist/archive/refs/heads/main.zip
 !unzip main.zip
-%cd ./PRAssist-main
+%cd ./PEERAssist-main
 ```
 
 _Step 2_ :  **Make bash files executable**
