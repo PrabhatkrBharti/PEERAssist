@@ -13,7 +13,7 @@ _We recommend using google colab to run it. <br>    (provided how to run on goog
 
 _Step 1_ :  **Download master-branch** of this repository [ zip file size : ~ 60 Mb ] & Go to **main folder** of it.
 ```bash
-!wget https://github.com/submitaccount/PRAssist/archive/refs/heads/main.zip
+!wget https://github.com/submitaccount/PEERAssist/archive/refs/heads/main.zip
 !unzip main.zip
 %cd ./PEERAssist-main
 ```
